@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+}
+
+.main .free {
+    height: inherit;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+}
+
+.main .free .icon {
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    margin: 35px 15px 0 25px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+.main .free .icon .fa-truck {
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 1.2 rem;
+}
+
+.main .free .icon::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #2fdab8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: .2s;
+}
+
+.main .free .icon:hover::before {
+    /* opacity: 1; */
+    transform: scale(1);
+}
+
+.main .free .text {
+    height: 80px;
+    width: 65%;
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.main .free .text #shi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 13px;
+    color: #2fdab8;
+}
+
+.main .free .text #sit {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 13px;
+}
+
+.main .free .text #con {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .sup {
+    height: inherit;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+}
+
+.main .sup .icon1 {
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    margin: 35px 15px 0 25px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+.main .sup .icon1 .fa-headphones {
+    color: #fff;
+    font-size: 1.2 rem;
+}
+
+.main .sup .icon1::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #2fdab8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: .2s;
+}
+
+.main .sup .icon1:hover::before {
+    /* opacity: 1; */
+    transform: scale(1);
+}
+
+.main .sup .text1 {
+    height: 80px;
+    width: 65%;
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.main .sup .text1 #ort {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 13px;
+    color: #2fdab8;
+}
+
+.main .sup .text1 #sit {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 13px;
+}
+
+.main .sup .text1 #con {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .money {
+    height: inherit;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+}
+
+.main .money .icon2 {
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    margin: 35px 15px 0 25px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+.main .money .icon2 .fa-bag-shopping {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.main .money .icon2::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #2fdab8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: .2s;
+}
+
+.main .money .icon2:hover::before {
+    /* opacity: 1; */
+    transform: scale(1);
+}
+
+.main .money .text2 {
+    height: 80px;
+    width: 65%;
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.main .money .text2 #bac {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 13px;
+    color: #2fdab8;
+}
+
+.main .money .text2 #sit {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 13px;
+}
+
+.main .money .text2 #con {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .gift {
+    height: inherit;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+}
+
+.main .gift .icon3 {
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    margin: 35px 15px 0 25px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+.main .gift .icon3 .fa-gift {
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 1.2rem;
+}
+
+.main .gift .icon3::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #2fdab8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: .2s;
+}
+
+.main .gift .icon3:hover::before {
+    /* opacity: 1; */
+    transform: scale(1);
+}
+
+.main .gift .text3 {
+    height: 80px;
+    width: 65%;
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.main .gift .text3 #cou {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 13px;
+    color: #2fdab8;
+}
+
+.main .gift .text3 #sit {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 13px;
+}
+
+.main .gift .text3 #con {
+    font-family: Arial, Helvetica, sans-serif;
+}
