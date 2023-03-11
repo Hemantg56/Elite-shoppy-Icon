@@ -15,6 +15,8 @@
     width: 25%;
     background-color: transparent;
     display: flex;
+    position: relative;
+    /* z-index: 0; */
 }
 
 .main .free .icon {
@@ -24,31 +26,29 @@
     margin: 35px 15px 0 25px;
     text-align: center;
     line-height: 80px;
-    position: relative;
-    z-index: 0;
 }
 
-.main .free .icon .fa-truck {
+.main .free .icon i {
     color: #fff;
     transform: rotateY(180deg);
     font-size: 1.2 rem;
 }
 
-.main .free .icon::before {
+.main .free::before {
     content: "";
     height: 80px;
     width: 80px;
     background-color: #2fdab8;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    top: 35PX;
+    left: 25PX;
+    /* z-index: -1; */
     /* opacity: 0; */
     transform: scale(0);
     transition: .2s;
 }
 
-.main .free .icon:hover::before {
+.main .free:hover::before {
     /* opacity: 1; */
     transform: scale(1);
 }
@@ -74,6 +74,25 @@
 
 .main .free .text #con {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .main .free .icon .fa-headphones {
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 1.2 rem;
+}
+
+.main .free .icon .fa-bag-shopping {
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 1.2 rem;
+}
+
+.main .free .icon .fa-bag-shopping {
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 1.2 rem;
 }
 
 .main .sup {
@@ -108,13 +127,13 @@
     top: 0;
     left: 0;
     z-index: -1;
-    /* opacity: 0; */
+    opacity: 0;
     transform: scale(0);
     transition: .2s;
 }
 
 .main .sup .icon1:hover::before {
-    /* opacity: 1; */
+    opacity: 1;
     transform: scale(1);
 }
 
@@ -173,13 +192,13 @@
     top: 0;
     left: 0;
     z-index: -1;
-    /* opacity: 0; */
+    opacity: 0;
     transform: scale(0);
     transition: .2s;
 }
 
 .main .money .icon2:hover::before {
-    /* opacity: 1; */
+    opacity: 1;
     transform: scale(1);
 }
 
@@ -239,13 +258,13 @@
     top: 0;
     left: 0;
     z-index: -1;
-    /* opacity: 0; */
+    opacity: 0;
     transform: scale(0);
     transition: .2s;
 }
 
 .main .gift .icon3:hover::before {
-    /* opacity: 1; */
+    opacity: 1;
     transform: scale(1);
 }
 
@@ -270,4 +289,4 @@
 
 .main .gift .text3 #con {
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
